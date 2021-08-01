@@ -1,18 +1,21 @@
-import './CSS/App.css'
-import './CSS/styles.css'
+import './CSS/css/styles.css'
 import Navbar from './components/basic/navbar';
-import Home from './components/basic/home';
+import Previous from './components/basic/previous-mystery';
+import Letters from './components/basic/mystery-letters';
+import Person from './components/basic/person';
 
 function App() {
   const title = 'Mystery Club'
   const link = "https://www.facebook.com/media/set/?set=a.10161735825100151&type=3"
   return (
     <div className="App">
+      <Letters />
       <Navbar />
+    
       <div className="content">
-        <h1 className="title"> {title} </h1>
-        <a href={link} className="link">Facebook</a>
-      <Home />
+      <Person />
+      <Previous />
+      
       </div>
     </div>
   );

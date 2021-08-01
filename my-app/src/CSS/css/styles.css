@@ -1,7 +1,106 @@
-.title {
-  color: purple;
+html {
+  background-color: #BCD04D;
 }
 
-.picture-title {
-  color: #e42491;
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.person {
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  width: 50%;
+  padding: 20px;
+}
+
+.home {
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  width: 50%;
+  padding: 20px;
+}
+
+.letter-logo {
+  background-color: white;
+  max-width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.letter-logo .letter {
+  font-size: 50px;
+}
+@media screen and (min-width: 320px) {
+  .letter-logo .letter {
+    font-size: calc(50px + 100 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .letter-logo .letter {
+    font-size: 150px;
+  }
+}
+.letter-logo .letter1 {
+  color: #11ADC4;
+}
+.letter-logo .letter2 {
+  color: #BCD04D;
+}
+.letter-logo .letter3 {
+  color: #F6AD64;
+}
+
+.navbar {
+  background-color: white;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  border-bottom: 4px solid #F6AD64;
+  color: #F6AD64;
+}
+.navbar h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.navbar .links {
+  margin-left: auto;
+  color: #BCD04D;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  font-size: 1.2em;
+  color: #11ADC4;
+}
+
+.person-pic {
+  max-width: 400px;
+}
+
+.previous-picture {
+  max-width: 400px;
+}
+
+h1 {
+  color: #11ADC4;
 }

@@ -1,10 +1,95 @@
-@import 'variables';
-@import 'mixins'; 
+@import "variables";
+@import "mixins";
 
-.title{
-  color:purple;
+// Content on App 
+
+html{
+  background-color: $green;
+}
+.content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+
 } 
 
-.picture-title{
-  color: $hotPink;
+.person{
+  align-content: flex-start;
+  width: 50%;
+  padding: 20px;
+  
 }
+.home {
+  align-content: flex-end;
+  width: 50%;
+  padding: 20px;
+  
+} 
+
+
+// Mystery Club Logo with resizeable font and different colour letters
+
+.letter-logo {
+  background-color: white;
+  max-width: auto;
+  display: flex;
+  justify-content: center;
+  .letter {
+    @include fluid-type($min_width, $max_width, $min_font, $max_font);
+  }
+  .letter1 {
+    color: $darkteal;
+  }
+  .letter2 {
+    color: $green;
+  }
+  .letter3 {
+    color: $orange;
+  }
+}
+
+// navigation bar 
+.navbar {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  border-bottom: 4px solid $orange;
+  color: $orange;
+  h1 {
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .links {
+    margin-left: auto;
+    color: $green;
+  }
+  a {
+    margin-left: 16px;
+    text-decoration: none;
+    padding: 6px;
+    font-size: 1.2em;
+    color: $darkteal;
+  } 
+}
+
+// Photo of person 
+
+.person-pic{
+  max-width: 400px;
+}
+
+// photo of previous mystery
+
+.previous-picture{
+  max-width: 400px;
+}
+
+h1 {
+  color: $darkteal;
+}
+

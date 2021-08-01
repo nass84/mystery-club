@@ -1,10 +1,10 @@
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h1>Mystery Club</h1>
       <div className="links">
         <a href="/">Home</a>
-        <a href="/create">New Mystery</a>
+        <a href="/create">Previous Mysteries</a>
+        <a href="/create">Suggest a Mystery</a>
       </div>
     </nav>
   );
