@@ -27,3 +27,12 @@
   list-style-type: none;
 }
 
+@mixin picturePadding{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@mixin pictureMargin{
+  margin-left: 30px;
+  margin-right: 30px;
+}

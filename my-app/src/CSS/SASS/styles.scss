@@ -8,24 +8,29 @@ html{
 }
 .content{
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
   background-color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-
+  
 } 
 
 .person{
   align-content: flex-start;
-  width: 50%;
-  padding: 20px;
-  
-}
-.home {
+  max-width: 500px;
+  @include picturePadding;
+  @include pictureMargin;
+  .quote {
+    max-width: 400px;
+  }
+} 
+
+
+.previous {
   align-content: flex-end;
-  width: 50%;
-  padding: 20px;
+  max-width: 500px;
+  @include picturePadding;
+  @include pictureMargin;
+
   
 } 
 
