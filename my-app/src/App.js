@@ -3,6 +3,7 @@ import Navbar from './components/basic/navbar';
 import Previous from './components/basic/previous-mystery';
 import Letters from './components/basic/mystery-letters';
 import Person from './components/basic/person';
+import Flower from './components/basic/flower';
 
 function App() {
   const title = 'Mystery Club'
@@ -13,9 +14,11 @@ function App() {
       <Navbar />
     
       <div className="content">
+      
+      <Flower />
       <Person />
       <Previous />
-      
+      <Flower />
       </div>
     </div>
   );

@@ -1,17 +1,20 @@
 const Previous = () => {
   const name = "Gannon";
+  const link = "https://www.thefloodgate.co.uk/"
+  const location ="Bleachers Baseball - Batting Cage"
   return (
     <div className="previous">
       <h1 className="picture-title">Previous Mystery</h1>
       <div className="previous-mystery">
-        <p> {name}'s choice : Bleachers Baseball - Batting Cage</p>
-
-        <a href="https://www.thefloodgate.co.uk"> 
+      <h2>What was the Mystery?</h2> 
+        <p className="quote"> {location} </p>
+         <p> Location: <a className="previous-link" href={link}> Flood Gate - Digbeth </a></p>
+          <p> Chosen by: {name} </p>
         <img
           className="previous-picture"
           src="https://i.imgur.com/mnCwWtw.jpeg"
         />
-                 </a>
+               
       </div>
     </div>
   );
