@@ -1,3 +1,6 @@
+import battingCage from '../../images/mystery-pictures/battingcages.jpg'
+
+
 const Previous = () => {
   const name = "Gannon";
   const link = "https://www.thefloodgate.co.uk/"
@@ -12,7 +15,7 @@ const Previous = () => {
           <p> Chosen by: {name} </p>
         <img
           className="previous-picture"
-          src="https://i.imgur.com/mnCwWtw.jpeg"
+          src={battingCage}
         />
                
       </div>

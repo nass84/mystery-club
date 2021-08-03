@@ -1,3 +1,22 @@
+// Mystery Heading
+
+@mixin stroke {
+  -webkit-text-stroke: 0.5px black;
+}
+
+@mixin mysteryHeading {
+  font-family: "Spicy Rice", cursive;
+  color: $orange;
+ @include stroke;
+  letter-spacing: 0.1em;
+  font-size: 2.3em;
+  background-color: $green;
+  border-radius: 50px;
+  padding: 15px;
+  text-align: center;
+  min-width: 300px;
+}
+
 // Resizeable text 
 
 @function strip-unit($value) {
@@ -23,15 +42,18 @@
   }
 }
 
+// removes bullet points
 @mixin noBullet{
   list-style-type: none;
 }
+
 
 @mixin picturePadding{
   padding-left: 20px;
   padding-right: 20px;
 }
 
+// Home Page Articles 
 @mixin pictureMargin{
   margin-left: 20px;
   margin-right: 20px;
@@ -55,3 +77,6 @@
     @include quoteWidth;
   }
 }
+
+// Previous Mystery articles 
+
