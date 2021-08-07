@@ -1,13 +1,23 @@
 import "./CSS/css/styles.css";
-import HomePage from "./components/pages/home-page";
 import PreviousMysteries from "../src/components/pages/previous-mysteries";
-
+import Homepage from "../src/components/pages/home-page";
+import { BrowserRouter as Router,  Route } from "react-router-dom";
+import Suggest from "../../my-app/src/components/pages/suggest-page"
 function App() {
- return (
-    <div className="App">
-      {/* <HomePage /> */}
-      <PreviousMysteries />
-    </div>
+  return (
+    <Router>
+      <div className="App">
+      <Route path="/suggest" exact>
+          <Suggest />
+        </Route>
+        <Route path="/" exact>
+          <Homepage />
+        </Route>
+        <Route path="/previous">
+          <PreviousMysteries />
+        </Route>
+      </div>
+    </Router>
   );
 }
 

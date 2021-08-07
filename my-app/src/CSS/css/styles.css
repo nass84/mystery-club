@@ -219,9 +219,10 @@ p {
           align-items: center;
 }
 .mystery-text .mystery-location {
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-weight: bold;
   color: #11ADC4;
+  text-align: left;
 }
 
 .mystery-title {
@@ -236,4 +237,25 @@ p {
   text-align: center;
   min-width: 300px;
   background-color: #11ADC4;
+}
+
+.previous-flower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.suggest-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }

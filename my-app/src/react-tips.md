@@ -71,6 +71,57 @@ const Home = () => {
  
 export default Home;
 ```
+
+## useEffect
+
+This runs code on every render unless you use dependencies. 
+
+- Can be used to Fetch Data
+
+### Dependency Array 
+
+This tells React when to run the code
+
+[] empty array will only run the function on first render
+
+[ state ] if the name of the state changes it will run the function
+
+```
+import { useEffect, useState } from "react";
+import BlogList from "./BlogList";
+
+const Home = () => {
+  const [blogs, setBlogs] = useState([
+    { title: 'My new website', body: 'lorem ipsum...', author: 'mario', id: 1 },
+    { title: 'Welcome party!', body: 'lorem ipsum...', author: 'yoshi', id: 2 },
+    { title: 'Web dev top tips', body: 'lorem ipsum...', author: 'mario', id: 3 }
+  ])
+
+  const [name, setName] = useState('mario');
+
+  const handleDelete = (id) => {
+    const newBlogs = blogs.filter(blog => blog.id !== id);
+    setBlogs(newBlogs);
+  }
+
+  useEffect(() => {
+    console.log('use effect ran');
+    console.log(blogs);
+  }, [name])
+
+  return (
+    <div className="home">
+      <BlogList blogs={blogs} title="All Blogs" handleDelete={handleDelete} />
+      <button onClick={() => setName('luigi')}>change name</button>
+    </div>
+  );
+}
+ 
+export default Home;
+```
+
+
+
 ## React Dev Tools
 
 - Install extension React Developer Tools 
@@ -79,6 +130,15 @@ These give us extra features in the console so we can see things like the compon
 
 Can be used for testing and debugging. 
 
+## json Serve
+
+Allows us to use fake Rest API to keep our data
+
+- On root directory create new folder data
+- Create new file called database.json
+- Copy list information into folder
+- Open new terminal + 
+- npx json-server --watch data/database.json --port 8000
 
 
 

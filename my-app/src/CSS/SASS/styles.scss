@@ -143,14 +143,25 @@ p {
   height: 160px;
   align-items: center;
   .mystery-location{
-    font-size: 1.5em;
+    font-size: 1.6em;
     font-weight: bold;
     color: $darkteal;
-
+    text-align: left;
     }
   }
 
 .mystery-title {
   @include mysteryHeading;
   background-color: $darkteal;
+}
+
+.previous-flower{
+  display: flex;
+  justify-content: center;
+}
+
+.suggest-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

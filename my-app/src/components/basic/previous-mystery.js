@@ -16,6 +16,7 @@ const Previous = () => {
         <img
           className="previous-picture"
           src={battingCage}
+          alt={location}
         />
                
       </div>
