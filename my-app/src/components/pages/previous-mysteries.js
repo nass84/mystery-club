@@ -457,7 +457,7 @@ const PreviousMysteries = () => {
       <Navbar />
       <div className="previous-mysteries">
         {mystery.map((mystery) => (
-          <div className="mystery-preview" key={mystery.id}>
+          <div className="mystery-preview"  key={mystery.id}>
               <h2 className="mystery-title">{mystery.title}
             
               </h2>
@@ -472,6 +472,7 @@ const PreviousMysteries = () => {
 
             <img
               className="mystery-image"
+    
               src={mystery.picture}
               alt={mystery.name}
             />
