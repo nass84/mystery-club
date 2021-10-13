@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import battingcages from "../../images/mystery-pictures/battingcages.jpg";
 import rageroom from "../../images/mystery-pictures/rageroom.jpeg";
 import tap from "../../images/mystery-pictures/tap.jpg";
@@ -46,9 +46,11 @@ import task from "../../images/mystery-pictures/task.jpg"
 import art from "../../images/mystery-pictures/art.jpg"
 import escape from "../../images/mystery-pictures/escape.png"
 import friend from "../../images/mystery-pictures/friend.jpg"
+import planet from "../../images/mystery-pictures/planet.jpg"
+import van from "../../images/mystery-pictures/vangogh.jpg"
 
 const PreviousMysteries = () => {
-  const [mystery, setMystery] = useState([
+  const mystery = ([
     {
       title: "Tap Dancing",
       location: "The Blue Orange Theatre",
@@ -439,13 +441,31 @@ const PreviousMysteries = () => {
       id: 42,
     },
     {
+      title: "Van Gogh Alive",
+      location: "Hippodrome",
+      link: "https://www.birminghamhippodrome.com/calendar/van-gogh-alive-the-experience/",
+      name: "Gannon",
+      picture: van,
+      date: "May 2021",
+      id: 43,
+    },
+    {
       title: "Batting Cages",
       location: "Bleachers Baseball",
       link: "https://www.thefloodgate.co.uk/",
       name: "Gannon",
       picture: battingcages,
       date: "July 2021",
-      id: 43,
+      id: 44,
+    },
+    {
+      title: "Planetarium",
+      location: "Great Barr",
+      link: "https://www.facebook.com/WonderDomePlanetariumUK/",
+      name: "Max",
+      picture: planet,
+      date: "September 2021",
+      id: 45,
     },
     
  
@@ -468,7 +488,7 @@ const PreviousMysteries = () => {
               <p className="mystery-date"> Date: {mystery.date}</p>
               <p className="mystery-chosenby"> Chosen by {mystery.name}</p>
             </div>
-            <a className="mystery-link" href={mystery.link} target="_blank">
+            <a className="mystery-link" href={mystery.link} target="_blank" rel="noreferrer">
 
             <img
               className="mystery-image"
