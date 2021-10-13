@@ -14,14 +14,14 @@ const Previous = () => {
          <p> <a className="previous-link" target="_blank" rel="noreferrer" href={link}> Click Here to find out more </a></p>
           <p> Chosen by: {name} </p>
         <img
-          className="previous-picture"
+          className="previous-picture phone-picture"
           src={previousmystery}
           alt={location}
         />
                
       </div>
       <img
-          className="previous-picture"
+          className="previous-picture phone-picture"
           src={previous}
           alt={location}
         />

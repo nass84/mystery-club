@@ -491,7 +491,7 @@ const PreviousMysteries = () => {
             <a className="mystery-link" href={mystery.link} target="_blank" rel="noreferrer">
 
             <img
-              className="mystery-image"
+              className="mystery-image phone-picture"
     
               src={mystery.picture}
               alt={mystery.name}

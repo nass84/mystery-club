@@ -15,7 +15,7 @@ const Person = () => {
         {name} : "A club where someone picks a mystery adventure on a Sunday and
         we don’t find out until we get there. It’s ace! "
       </p>
-      <img className="person-pic" src={rageRoom} alt="Emelia" />
+      <img className="person-pic phone-picture" src={rageRoom} alt="Emelia" />
       <h2> What was your favourite mystery and why?</h2>
       <p className="quote">
         {" "}
