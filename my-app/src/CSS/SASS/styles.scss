@@ -6,7 +6,7 @@
 
 html {
   background-color: white;
- margin: auto;
+  margin: auto;
 }
 
 .content {
@@ -24,6 +24,7 @@ html {
 .previous {
   align-content: center;
   @include article;
+  flex-direction: column;
 }
 
 // Mystery Club Logo with resizeable font and different colour letters
@@ -57,7 +58,6 @@ html {
   align-items: center;
   margin: 0 auto;
   border-bottom: 4px solid $orange;
-  color: $orange;
   max-width: 1000px;
   h1 {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -66,6 +66,10 @@ html {
     margin-left: auto;
     color: $green;
   }
+  &:hover {
+    color: $darkorange;
+  }
+
   a {
     margin-left: 16px;
     text-decoration: none;
@@ -85,7 +89,6 @@ html {
 
 .previous-picture {
   max-width: 400px;
-
 }
 
 h1 {
@@ -103,6 +106,7 @@ p {
 }
 .previous-link {
   margin-bottom: 10px;
+  color: $darkteal;
 }
 
 // Previous Mysteries
@@ -128,7 +132,8 @@ p {
     height: 300px;
     align-items: center;
     justify-content: center;
-  } &:hover{
+  }
+  &:hover {
     @keyframes createBox {
       from {
         transform: scale(0);
@@ -143,27 +148,26 @@ p {
 .mystery-text {
   height: 160px;
   align-items: center;
-  .mystery-location{
+  .mystery-location {
     font-size: 1.6em;
     font-weight: bold;
     color: $darkteal;
     text-align: left;
-    }
   }
+}
 
 .mystery-title {
   @include mysteryHeading;
   background-color: $darkteal;
 }
 
-.previous-flower{
+.previous-flower {
   display: flex;
   justify-content: center;
 }
 
-.suggest-content{
+.suggest-content {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-

@@ -114,8 +114,13 @@ html {
 }
 .navbar .links {
   margin-left: auto;
-  color: #BCD04D;
+
 }
+
+.links:hover{
+  color: #F26722;
+}
+
 .navbar a {
   margin-left: 16px;
   text-decoration: none;
@@ -155,8 +160,19 @@ p {
   margin-top: 25px;
 }
 
+.mysteryname{
+  font-weight: 500;
+}
+
 .previous-link {
   margin-bottom: 10px;
+  color: #F26722;
+}
+
+.previous-link:hover {
+ 
+
+  color: #11ADC4;
 }
 
 .previous-mysteries {
