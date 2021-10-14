@@ -488,6 +488,7 @@ const PreviousMysteries = () => {
               <p className="mystery-date"> Date: {mystery.date}</p>
               <p className="mystery-chosenby"> Chosen by {mystery.name}</p>
             </div>
+            <div className="center">
             <a className="mystery-link" href={mystery.link} target="_blank" rel="noreferrer">
 
             <img
@@ -497,6 +498,7 @@ const PreviousMysteries = () => {
               alt={mystery.name}
             />
             </a>
+            </div>
             <div className="previous-flower">
             <Flower/>
             </div>

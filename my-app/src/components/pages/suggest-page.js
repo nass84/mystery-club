@@ -8,7 +8,7 @@ const Suggest = () => {
     <Letters />
       <Navbar />
     <div className="suggest-content">
-    <img src={construction} alt="construction" className="contruction"/>
+    <img src={construction} alt="construction" className="contruction phone-picture"/>
     </div>
     </div> 
    );
