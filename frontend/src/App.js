@@ -1,8 +1,8 @@
 import "./CSS/css/styles.css";
-import PreviousMysteries from "../src/components/pages/previous-mysteries";
-import Homepage from "../src/components/pages/home-page";
+import PreviousMysteries from "./components/pages/previous-mysteries";
+import Homepage from "./components/pages/home-page";
 import { BrowserRouter as Router,  Route } from "react-router-dom";
-import Suggest from "../../my-app/src/components/pages/suggest-page"
+import Suggest from "./components/pages/suggest-page"
 function App() {
   return (
     <Router>
