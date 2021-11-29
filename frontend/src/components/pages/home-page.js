@@ -4,7 +4,7 @@ import Letters from "../basic/logo-letters";
 import Person from "../basic/person-interview";
 import Flower from "../basic/flower-picture";
 
-const apiPath = process.env.API_PATH || "http://localhost:3004";
+const apiPath = process.env.REACT_APP_API_PATH || "http://localhost:3004";
 
 const HomePage = () => {
   async function handleClick(e) {
