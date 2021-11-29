@@ -4,12 +4,14 @@ import Letters from "../basic/logo-letters";
 import Person from "../basic/person-interview";
 import Flower from "../basic/flower-picture";
 
+const apiPath = process.env.API_PATH || "http://localhost:3004";
+
 const HomePage = () => {
   async function handleClick(e) {
     e.preventDefault();
 
     // fetch json from api
-    const response = await fetch("http://localhost:3004");
+    const response = await fetch(apiPath);
     const json = await response.json();
     console.log(json);
   }
